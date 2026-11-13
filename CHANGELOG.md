@@ -2,6 +2,13 @@
 
 Notable changes to NoxaPlus PDF Desk are recorded here. Version numbers follow Semantic Versioning. Dates use `YYYY-MM-DD`.
 
+## [1.0.1] - 2026-11-13
+
+### Changed
+
+- Rewrote the Persian interface copy for a more natural, human tone: a new hero headline and description, clearer workspace and tool hints, and warmer privacy and download messages. No functional changes.
+- Regenerated the desktop and mobile screenshots and refreshed the version shown in the header.
+
 ## [1.0.0] - 2026-11-13
 
 ### Added
@@ -27,4 +34,5 @@ Notable changes to NoxaPlus PDF Desk are recorded here. Version numbers follow S
 - No preservation guarantee for signatures, PDF/A, forms, bookmarks, attachments, or tagged accessibility; downloaded PDFs remain untrusted, source-derived files.
 - Modern Chromium/Edge are the browser targets. The 1.0.0 release was smoke-tested in Google Chrome at desktop and mobile viewport sizes and through the standalone `file://` build. No broader browser support or audited accessibility claim is made.
 
+[1.0.1]: https://github.com/noxaplus-star/noxaplus-pdf-desk/releases/tag/v1.0.1
 [1.0.0]: https://github.com/noxaplus-star/noxaplus-pdf-desk/releases/tag/v1.0.0

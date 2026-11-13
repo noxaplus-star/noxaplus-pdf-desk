@@ -1,13 +1,15 @@
 {
   "name": "noxaplus-pdf-desk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "A private, offline Persian PDF workspace by NoxaPlus. Merge, split, rotate, and number pages without uploading files.",
   "author": "NoxaPlus <NoxaPlus2025@gmail.com>",
   "license": "MIT",
   "homepage": "https://www.noxaplus.ir",
   "type": "module",
-  "engines": { "node": ">=22.13" },
+  "engines": {
+    "node": ">=22.13"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build && node scripts/sync-standalone.mjs",
