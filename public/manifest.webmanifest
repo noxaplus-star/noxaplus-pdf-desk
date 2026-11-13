@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "NoxaPlus PDF Desk",
+  "short_name": "PDF Desk",
+  "description": "میز کار خصوصی PDF؛ ادغام، تفکیک، چرخش و شماره‌گذاری بدون آپلود.",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f6f0",
+  "theme_color": "#176d5b",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "./icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

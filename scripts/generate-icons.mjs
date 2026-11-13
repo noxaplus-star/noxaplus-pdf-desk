@@ -1,0 +1,11 @@
+import sharp from 'sharp';
+import { writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+const root = fileURLToPath(new URL('../public/', import.meta.url));
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" rx="100" fill="#176d5b"/><path d="M154 95h135l70 70v251H154z" fill="#fff"/><path d="M289 95v70h70" fill="#d9e9a3"/><path d="M199 221v108m0-108 87 108V221" stroke="#176d5b" stroke-width="19" fill="none" stroke-linejoin="round"/><path d="M318 286v58m-29-29h58" stroke="#176d5b" stroke-width="12"/><path d="M198 368h82" stroke="#176d5b" stroke-width="9"/></svg>`;
+await writeFile(`${root}icons/icon.svg`, svg);
+for (const [name, size] of [['icon-192.png',192], ['icon-512.png',512], ['favicon-32.png',32], ['apple-touch-icon.png',180]]) await sharp(Buffer.from(svg)).resize(size,size).png().toFile(`${root}icons/${name}`);
+await sharp(Buffer.from(svg)).resize(380,380).extend({ top:66,bottom:66,left:66,right:66,background:'#176d5b' }).png().toFile(`${root}icons/maskable-512.png`);
+const social = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#f7f6f0"/><rect x="60" y="60" width="1080" height="510" rx="15" fill="#176d5b"/><text x="110" y="200" font-family="Arial,sans-serif" font-size="65" font-weight="700" fill="#fff">NoxaPlus PDF Desk</text><text x="110" y="295" font-family="Arial,sans-serif" font-size="32" fill="#d9e9a3">YOUR FILES. YOUR DESK.</text><text x="110" y="375" font-family="Arial,sans-serif" font-size="26" fill="#fff">Merge. Split. Rotate. Number.</text><text x="110" y="430" font-family="Arial,sans-serif" font-size="24" fill="#fff">Private, offline, free and open source.</text><text x="110" y="515" font-family="Arial,sans-serif" font-size="21" fill="#d9e9a3">www.noxaplus.ir</text></svg>`;
+await sharp(Buffer.from(social)).png().toFile(`${root}og.png`);
+console.log('NoxaPlus PDF Desk icons and social image generated.');
