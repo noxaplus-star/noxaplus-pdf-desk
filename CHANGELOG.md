@@ -2,6 +2,15 @@
 
 Notable changes to NoxaPlus PDF Desk are recorded here. Version numbers follow Semantic Versioning. Dates use `YYYY-MM-DD`.
 
+## 1.0.2 - 2026-11-16
+
+Brand update.
+
+- The top bar now shows the original NoxaPlus logo, with a light variant for
+  the dark theme, replacing the generic file mark.
+- The README uses the official NoxaPlus brand banner.
+- Version labels now read 1.0.2.
+
 ## [1.0.1] - 2026-11-13
 
 ### Changed

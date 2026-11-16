@@ -2,6 +2,8 @@ import { useEffect, useRef, useState, type ChangeEvent } from 'react';
 import { zipSync } from 'fflate';
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import { Icon, type IconName } from './components/Icon';
+import markDark from './assets/mark-dark.png';
+import markLight from './assets/mark-light.png';
 import { Modal } from './components/Modal';
 import { PagePreview } from './components/PagePreview';
 import { releasePreviews } from './preview';
@@ -219,10 +221,10 @@ export default function App() {
       <a className="skip-link" href="#desk">رفتن به میز کار</a>
       <header className="topbar">
         <a className="brand" href="https://www.noxaplus.ir" target="_blank" rel="noopener noreferrer" aria-label="وب‌سایت NoxaPlus">
-          <span className="brand-mark"><Icon name="file" size={25}/></span>
+          <span className="brand-logo"><img className="brand-logo__dark" src={markDark} alt="NoxaPlus"/><img className="brand-logo__light" src={markLight} alt="" aria-hidden="true"/></span>
           <span className="brand-word" dir="ltr"><strong>NoxaPlus <span>PDF Desk</span></strong><small>YOUR FILES. YOUR DESK.</small></span>
         </a>
-        <span className="topbar-note"><span className="status-dot"/> پردازش محلی، بدون آپلود <span className="version" dir="ltr">v1.0.1</span></span>
+        <span className="topbar-note"><span className="status-dot"/> پردازش محلی، بدون آپلود <span className="version" dir="ltr">v1.0.2</span></span>
         <div className="header-actions">
           <button className="icon-btn" type="button" onClick={() => setHelp(true)} aria-label="راهنمای استفاده"><Icon name="help"/></button>
           <button className="icon-btn" type="button" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} aria-label={theme === 'light' ? 'حالت تیره' : 'حالت روشن'}><Icon name={theme === 'light' ? 'moon' : 'sun'}/></button>

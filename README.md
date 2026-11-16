@@ -1,8 +1,10 @@
+<p align="center"><img src="docs/brand.png" alt="NoxaPlus" width="520"></p>
+
 # NoxaPlus PDF Desk
 
 A private, local-first PDF workspace with a Persian, right-to-left interface. Merge, arrange, split, rotate, and number pages in your browser without uploading your documents or creating an account.
 
-**Version:** 1.0.1 · **Release date:** November 13, 2026 · **Project code:** MIT
+**Version:** 1.0.2 · **Release date:** November 16, 2026 · **Project code:** MIT
 
 [Live app](https://noxaplus-star.github.io/noxaplus-pdf-desk/) · [GitHub repository](https://github.com/noxaplus-star/noxaplus-pdf-desk) · [Official NoxaPlus website](https://www.noxaplus.ir)
 

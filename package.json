@@ -1,6 +1,6 @@
 {
   "name": "noxaplus-pdf-desk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "A private, offline Persian PDF workspace by NoxaPlus. Merge, split, rotate, and number pages without uploading files.",
   "author": "NoxaPlus <NoxaPlus2025@gmail.com>",
